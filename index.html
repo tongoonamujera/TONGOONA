@@ -14,7 +14,36 @@
        }
        body {
            background-color: rgb(15, 181, 226);
+           text-align: center;
+             display: table;
+             background-image: url("file:///C:/Users/USER/Desktop/IMG_20200707_094533.jpg");
+             background-repeat: no-repeat;
+             background-size: 98%;
        }
+       #main-div #div1 {
+            display: table-cell;
+        }
+        #main-div #div1 #div2 {
+            display: table-cell;
+        }
+        #main-div #div1 #div2 #mypersonalinfo {
+            display: table-cell;
+        }
+        fieldset {
+            margin-left: 0%;
+            margin-right: 0%;
+            background-color: lightgray;
+        }
+        img {
+           width: 150px; 
+        }
+        caption {
+            font-style: italic;
+            text-decoration: firebrick;
+        }
+        #mycap {
+            color: goldenrod;
+        }
        #myfieldset {
            margin-left: 10%;
            margin-right: 10%;
@@ -165,6 +194,49 @@
         </form>
         </fieldset>
     </main>
+    <div id="main-div">
+      <img src="file:///C:\Users\USER\Desktop\IMG_20200707_094533.jpg" alt="myimage"><caption id="mycap">MY IMAGES</caption>
+      <div id="div1">
+          <form action="mailto:tongoonamujera@gmail.com">
+              <label for="Name">ENTER YOUR NAME:
+                  <input type="text" name="NAME" placeholder="ENTER YOUR NAME" required><br><br>
+              </label>
+              <label for="surname">ENTER YOUR SURNAME:
+                  <input type="text" name="surname" placeholder="ENTER YOUR SURNAME" required><br><br>
+              </label>
+              <label for="email">ENTER YOUR EMAIL   :
+                  <input type="email" name="email" placeholder="ENTER YOUR EMAIL" required><br><br>
+              </label>
+          </form>
+      </div>
+      <div id="div2">
+          <fieldset> <legend><big>QUALIFICATIONS</big></legend>
+          <label for="qualifications">
+              HIGHEST LEVEL OF SCHOOL ATTAINED: <br><br>
+              <ol>
+                  <li>
+                      <label for="ordinary-advanced"><input type="radio" name="ordinary level">ORDINARY LEVEL</label><br><br>
+                  </li>
+                  <li>
+                      <label for="ordinary-advanced"><input type="radio" name="advanced level">ADVANCED LEVEL</label><br><br>
+                  </li>
+                  <li>
+                      <label for="ordinary-advanced"><input type="radio" name="tertiary level">TERTIARY LEVEL</label><br><br>
+                  </li>
+              </ol>
+          </label>
+          </fieldset><br><br>
+
+      </div>
+      <div id="mypersonalinfo" class="div3">
+          ANY ADDITIONAL INFORMATION <textarea name="additional" id="mytxtarea" cols="70" rows="2"></textarea><br><br>
+          <input type="checkbox" name="confirming"> I CAN CONFIRM ALL ABOVE INFORMATION IS TRUE AND GIVING FALSE INFO LEED TO PENALISATION <br><br>
+
+      </div>
+  </div>
+  <footer>
+      <img src="file:///C:\Users\USER\Desktop\IMG_20200707_094533.jpg" alt="myimage">
+  </footer>
     <script type="text/javascript">
         function myRealFucntion() {
             myDate.toDateString();
