@@ -3,11 +3,175 @@
   <head>
     <meta charset="UTF-8">
     <title>Fork Me! FCC: Test Suite Template</title>
-    <link rel="stylesheet" href="css/style.css">
+  
+    <title>my main page</title>
+       <style type="text/css">
+       form {
+           background-color: rgb(153, 147, 155);
+           text-align: center;
+           margin-left: 30%;
+           margin-right: 30%;
+       }
+       body {
+           background-color: rgb(15, 181, 226);
+       }
+       #myfieldset {
+           margin-left: 10%;
+           margin-right: 10%;
+           text-align: center;
+           background-color: rgb(150, 120, 255);
+           font-style: italic;
+           font-family: Georgia, 'Times New Roman', Times, serif;
+       }
+       #myfirstheading {
+         text-align: left;
+         text-shadow: salmon;
+         text-transform: capitalize;
+         font-style: oblique;
+         font-weight: lighter;
+       }
+       #mysecondh1heading {
+           font-style: oblique;
+           font-size: x-large;
+           text-transform: uppercase;
+
+       }
+       p {
+           font-size: x-large;
+           font-weight: bold;
+           font-style: oblique;
+    
+       }
+       </style>
+       <script type="text/JavaScript">
+       //let myReset = 'ARE YOU SURE YOU WANT TO RESET?';
+       //let mySubmission = 'YOU ARE ABOUT TO SUBMIT THE FORM';
+       function myReset() {
+        if (myReset) {
+            confirm('are you sure you want to reset the form?');
+        }else{
+            return false;
+        }
+       }
+       let daysOfWeek = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+       let monthsOfYear = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+       let dayOfMonth = 25;
+       let birthYear = 1994;
+       function myBirthDay() {
+        document.write('Tongoona Mujera Was born on:' + ' ' + daysOfWeek[6] + ' ' + dayOfMonth + ' ' + monthsOfYear[8] + ' ' + birthYear + '.');
+       }
+       myBirthDay();
+       function mySubmission() {
+          if (mySubmission) {
+              alert('are you sure you want to submit the form?');
+          }else{
+              return false;
+          } 
+       }
+       function myEmail() {
+           document.write('ENTER EMAIL');
+       }
+       function validate() { 
+         if(isEmpty(myform.Firstname.value)) {
+             alert('your form is not submitted!');
+         }else{
+             return false;
+         } 
+       }
+       let paragraph = document.createElement('p');
+       paragraph.textContent = 'hello, world!';
+       document.body.appendChild(paragraph);
+       let myBio = document.createElement('p');
+       myBio.textContent = 'HELLO EVERYONE MY MY NAME IS TONGOONA MUJERA, IM LOOKIN FORWARD TO BE WITH YOU. KINDLY GO THROUGH MY PAGE AND HAVE A LOT OF FUN!';
+       document.body.appendChild(myBio);
+       function birthday() {
+           document.write('YOUR BIRTHDAY');
+       }
+       function lastName() {
+           document.write('YOUR LASTNAME');
+       }
+       function firstName() {
+           document.write('YOUR FIRST NAME');
+       }
+       function yourPassword() {
+           document.write('YOUR PASSWORD');
+       }
+       function onReload() {
+           if (onReload) {
+               confirm('are you sure you want to reload the page?');
+           }else{
+               return false;
+           }
+       }
+       onReload();
+       </script>
+       <script type="text/javascript">
+       let myDate = new Date();
+       myDate.toDateString();
+       function today() {
+           myDate.toDateString();
+        document.write('Now the date is: ' + myDate);
+       }
+        today();
+        let myHeading = document.createElement('h2');
+        myHeading.textContent = 'TONGOONA MUJERA IS NICE WHILE WORKING WITH JAVASCRIPT';
+        myHeading.style.toLowerCase;
+        document.body.appendChild(myHeading);
+       </script>
   </head>
 
   <body>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script></script>
+    
+    <h1 id="myfirstheading">My Page Is Really Good</h1>
+    <h1 id="mysecondh1heading">how true is this</h1>
+    <main>
+        <fieldset id="myfieldset"><legend><big>TONGOONA MUJERA FORM</big></legend>
+        <form action="mailto:tongoonamujera@gmail.com"onsubmit="return validate()" id="myform">
+            <div id="div1">
+                <script>
+                    firstName();
+                </script>
+                <input type="text" name="Firstname" placeholder="enter your name please"><br><br>
+                <script>
+                    lastName();
+                </script>
+                <input type="text" name="Last name" id="last name" placeholder="enter your last name" required><br><br>
+                <script>
+                    myEmail();
+                </script>
+                <input type="email" name="email" placeholder="enter your email" required><br><br>
+                <script>
+                    yourPassword();
+                </script>
+                <input type="password" name="password" placeholder="enter your password"><br><br>
+        <script>
+              birthday(); 
+        </script><input type="date" name="birthday" id="birthday"><br><br>
+            </div>
+            <div id="div2">
+                KINDLY SELECT YOU HIGHEST QUALIFICATION: <br><br>
+                <select name="your details" id="QUALIFICATION">
+                    
+                    <option value="odinary level">ODINARY LEVEL</option>
+                    <option value="advanced level">ADVANCED LEVEL</option>
+                    <option value="tertiary level">TERTIARY</option><br><br>
+                </select><br><br>
+                ANYTHING YOU WANT TO WRITE US WRITE IN THE SPACE BELLOW : <br><br>
+                <textarea name="additional information" id="" cols="30" rows="10"></textarea><br><br>
+                <input type="reset" value="RESTART ALL" onclick="return myReset()"><br><br>
+                <input type="submit" name="submit" value="SUBMIT" onclick="return validate()">
+            </div>
+        </form>
+        </fieldset>
+    </main>
+    <script type="text/javascript">
+        function myRealFucntion() {
+            myDate.toDateString();
+            document.write('The date in Zimbabwe is: ' + myDate);
+        }
+        myRealFucntion();
+    </script>
 
     <!--
 
